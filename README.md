@@ -26,6 +26,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - enable IIS and CGI
 - PHP manager for IIS
 -  MySQL 5.5.62
+<p>
+<img src="https://i.imgur.com/8PmW7L3.png" height="80%" width="80%" alt="osticket to root file"/>
+</p>
+<p>
 
 <h2>Installation Steps</h2>
 
@@ -33,7 +37,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/CfitwNr.png" height="80%" width="80%" alt="osticket to root file"/>
 </p>
 <p>
-After Fulfilling the prerequisties, download the osTicket software and click on the zipfile, extract and copy the upload folder to c:\inetpub\wwwroot, and rename it osTicket. You would then reload IIS and go to sites, to the default, and you will find OsTicket.
+After you have finished installing the pre-reqs, download osTicket v1.15.8 from the Installation Files Folder. Extract and copy the "upload" folder to c:\inetpub\wwwroot, and rename it "upload" to "osTicket". Reload IIS (Open IIS, Stop and Start the server)
  
 </p>
 <br />
