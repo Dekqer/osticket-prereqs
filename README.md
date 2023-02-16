@@ -54,7 +54,7 @@ Next, Go to Sites ---> Defualt ---> osTicket. On the right, click "browse" *.80"
 <img src="https://i.imgur.com/XHvNJgV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Note that some extensions arent enabled so we will now go back to IIS.
+Note, if you notice, some of the extensions aren't enabled so we will now go back to IIS.
 </p>
 <br />
 
@@ -62,18 +62,21 @@ Note that some extensions arent enabled so we will now go back to IIS.
 <img src="https://i.imgur.com/msFHN72.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In IIS we will double click on PHP manager. then we will click on "enable or disable an extension" which will take us here, in here we can enable the required extensions which are: Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-  we will also rename a file called ost-sampleconfig.php To: C:\inetpub\wwwroot\osTicket\include\ost-config.php in that folder, then we will go to the properties of that file, under security, then advanced and we will disable the inheritance and grant new permissions to everyone so they are all able to use the software. After all that is done we will go back to the site and fill out all the info except for the SQL database server which we have to install.
+Double-Click PHP Manager ---> Click "Enable or disable extension"
+-Enable: php_imap.dll
+-Enable: php_intl.dll
+-Enable: php_opcache.dll
+Refresh the osTicket site in your browser, and you should notice we now have all green checkmarks as they are enabled.
+ 
+Note: We also want to Rename: ost-config.php From C:\linepub\wwwroot\osTicket\include\ost-sampleconfig.php ---> C:\linepub\wwwroot\osTicket\include\ost-config.php
 
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/WPYnTq2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/kJOwCxc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once we install Heidi SQL we will create and then connect to the session using the information we used when installing My SQL 5.5.62, and we will create a database called "osticket"
+After you have finished setting up osTicket in the browser, from the installation files, download and Install HeidiSQL and open it. Create a new session using root/password1 and connect to it. Creaate a database called "osTicket". Continue setting up osTicket in the browser.
 </p>
 <br />
 
@@ -81,6 +84,7 @@ Once we install Heidi SQL we will create and then connect to the session using t
 <img src="https://i.imgur.com/fuIUXZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then well fill out the info from the SQL server on the osTicket site and osticket is now setup, all that remains is some cleanup in which we Delete: C:\inetpub\wwwroot\osTicket\setup, and we will also Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php. After that osTicket is setup and we can start resolving tickets/
+Hopefully at this point osTicket is installed with no errors. Lastly clean up and delete: C:\linetpub\wwwroots
+ osticket\setup and set permissions to "read" only C:\linetpub\wwwroots\osticket\include\ost-config.php
 </p>
 <br />
