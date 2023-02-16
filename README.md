@@ -43,7 +43,7 @@ After you have finished installing the pre-reqs, download osTicket v1.15.8 from 
 <br />
 
 <p>
-<img src="https://i.imgur.com/cCxvpXp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7MMi6FR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next, Go to Sites ---> Defualt ---> osTicket. On the right, click "browse" *.80"
